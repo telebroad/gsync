@@ -9,6 +9,7 @@ import (
 
 // Map is a generic wrapper around sync.Map.
 type Map[K comparable, V any] struct {
+	// data is the underlying sync.Map.
 	data sync.Map
 }
 
